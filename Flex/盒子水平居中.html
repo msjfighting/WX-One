@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father {
+            border: 1px solid #f00;
+             height: 400px;
+             width: 400px;
+             /* position: relative; */
+             /* flex实现水平居中 */
+             display: flex;
+             /* 主轴对齐方式 */
+             justify-content: center;
+              /*交叉轴对齐  */
+             align-items: center;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid deepskyblue;
+            /* 定位实现水平居中,需要考虑清除浮动,不然后续的兄弟元素布局出现问题 */
+            /* position: absolute;
+            left: 50%;
+            top: 50%; */
+            /* 1 
+            margin-left: -50px;
+            margin-top: -50px; */
+            /* 2 */
+             /* transform: translate(-50%,-50%);  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">盒子</div>
+    </div>
+</body>
+
+</html>

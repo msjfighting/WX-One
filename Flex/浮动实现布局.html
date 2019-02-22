@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .slider img{
+             width: 100%;
+        }
+        .index-nav ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .index-nav li{
+            width: 33.3333%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .index-nav li a{
+             height: 100px;
+            /* 1.给当前的分区设置伸缩盒模式 使用此布局不用考虑清除浮动*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .index-nav li img{
+            width: 40px;
+        }
+        .index-nav li p{
+            font-size: 14px;
+            color: #333;
+        }
+        .enter{
+            height: 100px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img src="../assets/images/banner-01.png" alt="">
+    </div>
+    <div class="index-nav">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="../assets/icons/grid-02.png" alt="">
+                    <p>美食</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/icons/grid-03.png" alt="">
+                    <p>美食</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/icons/grid-04.png" alt="">
+                    <p>美食</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/icons/grid-05.png" alt="">
+                    <p>美食</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/icons/grid-06.png" alt="">
+                    <p>美食</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/icons/grid-07.png" alt="">
+                    <p>美食</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/icons/grid-08.png" alt="">
+                    <p>美食</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/icons/grid-09.png" alt="">
+                    <p>美食</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>更多</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="enter">首页入口</div>
+</body>
+</html>
