@@ -1,0 +1,36 @@
+<view class='avatar center'>
+  <image src='/assets/images/avatar.png'></image>
+</view>
+<view class='divider'></view>
+<view class='cell'>
+  <view class='cell-item'>
+    <checkbox-group>
+      <checkbox color='#f60' checked></checkbox>
+      <checkbox color='#f60'></checkbox>
+    </checkbox-group>
+  </view>
+  <view class='divider'></view>
+<view class='cell-item' >
+    <radio-group bindchange="radioChangeHandle" data-param="1">
+      <radio color='#f60' checked value='male'>男</radio>
+      <radio value='fmale'>女</radio>
+    </radio-group>
+  </view>
+</view>
+<view class='cell'>
+ <view class='cell-item arrow_right'>
+    <text>微信小程序事件</text>
+ </view>
+  <view class='father' bindtap='fatherTapHandle'>
+      父亲
+     <view class='son' catchtap='sonTapHandle'>儿子</view>
+  </view>
+</view>
+
+<wxs src="../../utils/common.wxs" module="tools" />
+<view>
+  {{tools.my_slice("123456789",0,5)}}
+</view>
+<view>
+  {{tools.date('2018-02-02')}}
+</view>

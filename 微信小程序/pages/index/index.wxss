@@ -1,0 +1,98 @@
+/* ---------------------------
+          首页轮播图分区
+------------------------------- */
+
+/* !!!小程序中的image标签默认图片有宽高,需要手动设置图片宽高 */
+
+.silder {
+  overflow: hidden;
+}
+
+.silder, .silder image, .silder swiper {
+  width: 100%;
+  height: 390rpx;
+}
+
+/* ---------------------------
+          首页导航分区
+------------------------------- */
+
+.index-nav {
+  /* 5. 给当前父元素设置成伸缩和模式*/
+  display: flex;
+  /* 6. 设置子元素换行排列 */
+  flex-wrap: wrap;
+}
+
+.index-nav .nav-item {
+  width: 33.3333%;
+  height: 200rpx;
+  /* 1. 给当前父元素设置为伸缩盒模式 */
+  display: flex;
+  /* 2. 设置垂直排列 */
+  flex-direction: column;
+  /* 3. 设置主轴居中 */
+  justify-content: center;
+  /* 4. 设置交叉轴居中 */
+  align-items: center;
+  /* 1.传统方式实现细线边框 *//* 1.1 设置右边与下边 *//* border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  box-sizing: border-box; // 此代码注释,边框将出现对不齐的现象 *//* 2.给父元素添加伪类实现细线边框,可解决边框对不齐的问题 *//* 2.1 只设置底部边框 */
+  border-bottom: 1rpx solid #ccc;
+}
+
+/* 1.2 设置最右边的边框属性无 */
+
+.index-nav .nav-item:nth-child(3n) {
+  border-right: 0 none;
+}
+
+/* 2.1 使用伪类添加右边细线 */
+
+/* 2.2 将最右边的设置的伪类细线清空 */
+
+.index-nav .nav-item:nth-child(3n)::after {
+  width: 0;
+}
+
+.index-nav image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.index-nav text {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ---------------------------
+          首页入口分区
+------------------------------- */
+
+.index-enter {
+  display: flex;
+  padding: 20rpx 30rpx;
+}
+
+.index-enter .erter-item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.erter-item image {
+  width: 320rpx;
+  height: 178rpx;
+}
+
+/* 方法一:分区间隔 可封装,方便其他地方使用 */
+
+/* .index-enter{
+  margin-top: 20rpx;
+}
+page{
+  background-color: #ccc;
+}
+.index-nav, .index-enter{
+  background-color: #fff;
+} */
